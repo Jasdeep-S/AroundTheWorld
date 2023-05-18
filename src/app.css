@@ -1,0 +1,256 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 1140px;
+    padding: 0px 15px;
+    margin: auto;
+}
+
+body{
+    background: #222222
+}
+
+.header{
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #1b1b1b;
+    z-index: 11;
+}
+
+.header h5 {
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.country_bottom{
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2rem;
+    row-gap: 2rem;
+}
+
+.country_card{
+    width: 250px;
+    border-radius: 5px;
+    background: #1b1b1b;
+    color: #fff;
+    transition: background 0.3s ease;
+}
+
+.country_card:hover{
+    background: rgb(68, 68, 68);
+}
+
+.country_img img{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.all_country_wrapper{
+    margin-top: 100px;
+}
+
+.country_data{
+    padding: 20px;
+}
+
+.country_data h3{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.country_data h6{
+    margin-bottom: 10px;
+    font-weight: 400;
+    opacity: 80%;
+}
+
+.country_bottom h4{
+    color: #fff;
+    text-align: center;
+    margin-top: 15px;
+}
+
+input {
+    padding: 10px 25px;
+    color: #fff;
+    border-radius: 5px;
+    background: #1b1b1b;
+    border: none;
+    margin-bottom: 50px;
+    cursor: pointer;
+    outline: 1px solid white;
+}
+
+::placeholder{
+    color:#fff;
+    font-size: .9rem;
+}
+
+.country_top{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.country_info_wrapper{
+    margin-top: 120px;
+}
+
+.country_info_container{
+    display: flex;
+    column-gap: 3rem;
+}
+
+.country_info-img, .country_info{
+    width: 50%;
+}
+
+button{
+    padding: 10px 25px;
+    color:#fff;
+    background: #1b1b1b;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 120px;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+button:hover{
+    background: rgb(68, 68, 68);
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.country_info h3{
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+}
+
+.country_info-left h5{
+    color: #fff;
+    font-size: .9rem;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.country_info-left h5 span{
+    color: #fff;
+    opacity: 85%;
+    font-weight: 400;
+}
+
+.filter_but{
+    margin-right: 10px;
+}
+
+.filter_but:hover{
+    background: rgb(68, 68, 68);
+}
+
+
+@media (max-width: 490px) {
+    .container {
+        width: 450px;
+    }
+    
+    .country_data h3 {
+        font-size: 30px;
+    }
+    
+    .country_data h6 {
+        font-size: 20px;
+    }
+    
+    .country_top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    input {
+        margin-bottom: 10px;
+    }
+    
+    .filter_but {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    button {
+        padding: 20px 25px;
+        width: 100px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-size: 15px;
+        display: block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .country_bottom {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+
+    }
+
+    .country_info_wrapper{
+        margin-top: 100px;
+    }
+    
+    .country_info_container{
+        flex-direction: column;
+        display: flex;
+        margin-top: 100px;
+    }
+    
+    .country_info-img, .country_info{
+        width: 50%;
+    }
+
+    .country_info h3{
+        margin-top: 50px;
+        color: #fff;
+        font-size: 1.3rem;
+        margin-bottom: 30px;
+    }
+    
+    .country_info-left h5{
+        color: #fff;
+        font-size: .9rem;
+        font-weight: 400;
+        margin-bottom: 10px;
+    }
+    
+    .country_info-left h5 span{
+        color: #fff;
+        opacity: 85%;
+        font-weight: 400;
+    }
+
+
+    
+}
