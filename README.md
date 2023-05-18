@@ -3,7 +3,8 @@
 Around The World is a React application that interacts with the REST Countries API to display country data on the screen.
 
 
-Technologies Used
+# Technologies Used
+
 The AroundTheWorld application is built with the following technologies:
 
 React: A JavaScript library for building user interfaces.
